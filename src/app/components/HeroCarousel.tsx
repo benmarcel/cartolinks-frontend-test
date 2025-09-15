@@ -125,7 +125,7 @@ const HeroCarousel: React.FC = () => {
         {slides.map((_, index) => (
           <div
             key={index}
-            className={`h-3 w-3 rounded-full cursor-pointer ${index === currentIndex ? 'bg-gray-800' : 'bg-gray-400'}`}
+            className={`h-3 w-3 rounded-full cursor-pointer ${index === currentIndex ? 'bg-gray-800 dark:bg-white' : 'bg-gray-400'}`}
             onClick={() => setCurrentIndex(index)}
           ></div>
         ))}
