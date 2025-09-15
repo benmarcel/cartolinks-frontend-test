@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js + TypeScript Assignment
 
-## Getting Started
+This project is a **frontend application** built with [Next.js](https://nextjs.org/) and [TypeScript](https://www.typescriptlang.org/).  
+It demonstrates responsive UI components such as a **Navbar**, **Hero Carousel**, **Feature Section**, **gallery section**, and **footer**, styled with [Tailwind CSS](https://tailwindcss.com/).
 
-First, run the development server:
+---
+
+## Tech Stack
+
+- **Framework:** [Next.js (App Router)](https://nextjs.org/docs/app)
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **Icons:** [Lucide React](https://lucide.dev/)
+
+---
+
+## Project Structure
+frontend-assignment/
+├── .next/                  # Next.js build output (auto-generated)
+├── node_modules/           # Dependencies
+├── public/                 # Static assets (images, icons, etc.)
+│   
+│
+├── src/
+│   └── app/                # Next.js App Router pages and layouts
+│       ├── components/     
+│       │   ├── Navbar.tsx
+│       │   ├── HeroCarousel.tsx
+│       │   ├── CarouselCard.tsx
+│       │   ├── FeatureSection.tsx
+│       │   ├── FeatureCard.tsx
+│       │   └── context/
+│       │       └── ThemeContext.tsx
+│       │
+│       ├── globals.css     # Tailwind + global styles
+│       ├── layout.tsx      # Root layout (App Router)
+│       └── page.tsx        # Entry page
+│
+├── .gitignore
+├── eslint.config.mjs
+├── next-env.d.ts
+├── next.config.ts
+├── package.json
+├── package-lock.json
+├── postcss.config.mjs
+├── README.md
+└── tsconfig.json
+
+
+
+
+---
+
+## Installation & Setup
+
+1. **Clone the repository**
 
 ```bash
+git clone https://github.com/benmarcel/cartolinks-frontend-test.git
+cd cartolinks-frontend-test
+
+npm install
+# or
+yarn install
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Responsive Navbar
+With theme toggle, icons, and user profile dropdown.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Hero Carousel
+Custom-built slider with:
 
-## Learn More
+Next/Previous navigation
 
-To learn more about Next.js, take a look at the following resources:
+Dot indicators
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Peek preview 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Feature Section
+Grid-based layout showing 8 feature cards (2 rows × 4 columns on large screens, responsive on smaller screens).
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
